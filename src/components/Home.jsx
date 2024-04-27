@@ -19,7 +19,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
 
   const deleteTask = async (id) => {
     await axios
-      .delete(`http://localhost:4000/api/v1/task/delete/${id}`, {
+      .delete(`https://server-x52k.onrender.com/api/v1/task/delete/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

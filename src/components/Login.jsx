@@ -11,7 +11,7 @@ function Login({ isAuthenticated, setIsAuthenticated }) {
     e.preventDefault();
     axios
       .post(
-        "http://localhost:4000/api/v1/user/login",
+        "https://server-x52k.onrender.com/api/v1/user/login",
         { email, password },
         {
           withCredentials: true,
