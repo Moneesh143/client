@@ -1,0 +1,22 @@
+/* Custom modal style */
+.custom-modal {
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/* Custom animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the modal */
+.modal {
+  animation: fadeIn 0.5s ease;
+}
