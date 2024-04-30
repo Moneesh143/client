@@ -27,7 +27,7 @@ function Register({ isAuthenticated, setIsAuthenticated }) {
     formData.append("avatar", avatar);
     try {
       const res = await axios.post(
-        "https://server-x52k.onrender.com/api/v1/user/register",
+        "https://server-1-tenq.onrender.com/api/v1/user/register",
         formData,
         {
           withCredentials: true,

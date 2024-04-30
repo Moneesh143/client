@@ -24,7 +24,7 @@ const Header = ({
   const fetchTasks = async () => {
     try {
       const response = await axios.get(
-        "https://server-x52k.onrender.com/api/v1/task/mytask",
+        "https://server-1-tenq.onrender.com/api/v1/task/mytask",
         { withCredentials: true }
       );
       setAllTasks(response.data.tasks);
@@ -37,7 +37,7 @@ const Header = ({
   const handleLogout = async () => {
     try {
       const { data } = await axios.get(
-        "https://server-x52k.onrender.com/api/v1/user/logout",
+        "https://server-1-tenq.onrender.com/api/v1/user/logout",
         { withCredentials: true }
       );
       toast.success(data.message);
